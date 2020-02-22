@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="AddAStar" xml:space="preserve">
+    <value>Добавить звезду</value>
+  </data>
+  <data name="AreYouSureYouWantToRemoveTheConstellationFromTheCatalog" xml:space="preserve">
+    <value>Вы действительно хотите удалить созвездие из каталога?</value>
+  </data>
+  <data name="AreYouSureYouWantToRemoveTheStarFromTheCatalog" xml:space="preserve">
+    <value>Вы действительно хотите удалить звезду из каталога?</value>
+  </data>
+  <data name="AreYouSureYouWantToReplaceTheData" xml:space="preserve">
+    <value>Вы действительно хотите заменить данные?</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="CatalogOfConstellations" xml:space="preserve">
+    <value>Каталог созвездий:</value>
+  </data>
+  <data name="CatalogOfPlanets" xml:space="preserve">
+    <value>Каталог планет:</value>
+  </data>
+  <data name="CatalogOfStars" xml:space="preserve">
+    <value>Каталог звёзд:</value>
+  </data>
+  <data name="ChangeTheData" xml:space="preserve">
+    <value>Изменить данные</value>
+  </data>
+  <data name="ConfirmAction" xml:space="preserve">
+    <value>Подтвердить действие</value>
+  </data>
+  <data name="Constellations" xml:space="preserve">
+    <value>Созвездия</value>
+  </data>
+  <data name="CorrectLinks" xml:space="preserve">
+    <value>Подкорректировать ссылки</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="DataWasSuccessfullyAdded" xml:space="preserve">
+    <value>Данные были успешны добавлены</value>
+  </data>
+  <data name="Declination" xml:space="preserve">
+    <value>Склонение, град.мин:</value>
+  </data>
+  <data name="DeclinationMustBeAPositiveNumber" xml:space="preserve">
+    <value>Склонение должно быть числом в диапазоне от -90 до 90 (дробная часть меньше 60)</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DeleteEverything" xml:space="preserve">
+    <value>Удалить всё</value>
+  </data>
+  <data name="EnterTheDeclination" xml:space="preserve">
+    <value>введите склонение</value>
+  </data>
+  <data name="EnterTheLuminosity" xml:space="preserve">
+    <value>введите светимость</value>
+  </data>
+  <data name="EnterTheName" xml:space="preserve">
+    <value>введите название</value>
+  </data>
+  <data name="EnterTheNameOfConstellation" xml:space="preserve">
+    <value>Дайте название созведию</value>
+  </data>
+  <data name="EnterTheRadius" xml:space="preserve">
+    <value>введите радиус</value>
+  </data>
+  <data name="EnterTheRightAscension" xml:space="preserve">
+    <value>введите прямое восхождение</value>
+  </data>
+  <data name="EnterTheTemperature" xml:space="preserve">
+    <value>введите температуру</value>
+  </data>
+  <data name="EnterTheURIOfImage" xml:space="preserve">
+    <value>введите URI картинки</value>
+  </data>
+  <data name="EnterTheWeight" xml:space="preserve">
+    <value>введите массу</value>
+  </data>
+  <data name="EnterToSearch" xml:space="preserve">
+    <value>Введите для поиска</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="FieldsMustNotBeEmpty" xml:space="preserve">
+    <value>Поля не должны быть пустыми</value>
+  </data>
+  <data name="InteractiveOfPlanetMovement" xml:space="preserve">
+    <value>Интерактив движения планет</value>
+  </data>
+  <data name="InternetAccess" xml:space="preserve">
+    <value>Выход в интернет</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Luminosity" xml:space="preserve">
+    <value>Светимость</value>
+  </data>
+  <data name="LuminosityMustBeAPositiveNumber" xml:space="preserve">
+    <value>Светимость должна быть положительным числом</value>
+  </data>
+  <data name="LuminosityOfStarLabelText" xml:space="preserve">
+    <value>Светимость, Lo(= 3,827 * 10^26 Вт):</value>
+  </data>
+  <data name="MapOfStarrySky" xml:space="preserve">
+    <value>Карта звёздного неба</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Название:</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Уведомление</value>
+  </data>
+  <data name="ObservationalData" xml:space="preserve">
+    <value>Наблюдательные данные</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>ОK</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="OrbitRadius" xml:space="preserve">
+    <value>Радиус орбиты, *10^6 км</value>
+  </data>
+  <data name="PeriodOfRotationAroundTheAxis" xml:space="preserve">
+    <value>Период обращения вокруг своей оси, дней</value>
+  </data>
+  <data name="PeriodOfRotationAroundTheBody" xml:space="preserve">
+    <value>Период ее обращения вокруг этого тела, суток</value>
+  </data>
+  <data name="PhotosOfPlanets" xml:space="preserve">
+    <value>Снимки планет</value>
+  </data>
+  <data name="PhysicalCharacteristics" xml:space="preserve">
+    <value>Физические характеристики</value>
+  </data>
+  <data name="Planets" xml:space="preserve">
+    <value>Планеты</value>
+  </data>
+  <data name="PositionOnTheStarMap" xml:space="preserve">
+    <value>Положение на звездной карте:</value>
+  </data>
+  <data name="PrimaryData" xml:space="preserve">
+    <value>Первостепенные данные</value>
+  </data>
+  <data name="Radius" xml:space="preserve">
+    <value>Радиус</value>
+  </data>
+  <data name="RadiusMustBeAPositiveNumber" xml:space="preserve">
+    <value>Радиус должен быть положительным числом</value>
+  </data>
+  <data name="RadiusOfPlanet" xml:space="preserve">
+    <value>Радиус, км</value>
+  </data>
+  <data name="RadiusOfStarLabelText" xml:space="preserve">
+    <value>Радиус, Ro(= 6,960 * 10^8 м):</value>
+  </data>
+  <data name="RemoveConstellationFromCatalog" xml:space="preserve">
+    <value>Удалить созвездие из каталога</value>
+  </data>
+  <data name="RemoveTheStarFromTheCatalog" xml:space="preserve">
+    <value>Удалить звезду из каталога</value>
+  </data>
+  <data name="RightAscension" xml:space="preserve">
+    <value>Прямое восхождение, ч.мин:</value>
+  </data>
+  <data name="RightAscensionMustBeAPositiveNumber" xml:space="preserve">
+    <value>Прямое восхождение должно быть положительным числом меньше 24 (дробная часть меньше 60)</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="SaveTheLink" xml:space="preserve">
+    <value>Сохранить ссылку</value>
+  </data>
+  <data name="SelectTheLink" xml:space="preserve">
+    <value>Выбрать ссылку</value>
+  </data>
+  <data name="Stars" xml:space="preserve">
+    <value>Звёзды</value>
+  </data>
+  <data name="StarsAndTwoPoints" xml:space="preserve">
+    <value>Звёзды:</value>
+  </data>
+  <data name="TableOfStars" xml:space="preserve">
+    <value>Таблица звёзд</value>
+  </data>
+  <data name="Temperature" xml:space="preserve">
+    <value>Температура</value>
+  </data>
+  <data name="TemperatureMustBeAPositiveNumber" xml:space="preserve">
+    <value>Температура должна быть положительным числом</value>
+  </data>
+  <data name="TemperatureOfStarLabelText" xml:space="preserve">
+    <value>Температура, К:</value>
+  </data>
+  <data name="TheBodyAroundWhichThePlanetRotates" xml:space="preserve">
+    <value>Тело, вокруг которого планета вращается</value>
+  </data>
+  <data name="TheConstellationHasBeenSuccessfullyRemovedFromTheCatalog" xml:space="preserve">
+    <value>Созвездие было успешно удалено из каталога</value>
+  </data>
+  <data name="TheDataWasSuccessfullyReplaced" xml:space="preserve">
+    <value>Данные были успешны заменены</value>
+  </data>
+  <data name="TheIncludedStars" xml:space="preserve">
+    <value>Входящие звезды</value>
+  </data>
+  <data name="TheStarHasBeenSuccessfullyRemovedFromTheCatalog" xml:space="preserve">
+    <value>Звезда была успешно удалена из каталога</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип:</value>
+  </data>
+  <data name="TypeOfStar" xml:space="preserve">
+    <value>Тип звезды</value>
+  </data>
+  <data name="URIOfImage" xml:space="preserve">
+    <value>URI картинки:</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Масса</value>
+  </data>
+  <data name="WeightMustBeAPositiveNumber" xml:space="preserve">
+    <value>Масса должна быть положительным числом</value>
+  </data>
+  <data name="WeightOfPlanet" xml:space="preserve">
+    <value>Масса, *10^22 кг</value>
+  </data>
+  <data name="WeightOfStarLabelText" xml:space="preserve">
+    <value>Масса, Mo(= (1,98847 ± 0,00007) * 10^30 кг):</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+</root>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project"
+             x:Class="Project.CatalogOfConstellationsPage"
+             BackgroundImage="Images/constellationBackground.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar x:Name="ConstellationSearchBar" FontSize="25" Placeholder="{local:Translate EnterToSearch}" TextChanged="ConstellationSearchBar_TextChanged"/>
+            <ListView x:Name="ConstellationListView" ItemsSource="{Binding Constellations}" ItemTapped="ConstellationListView_ItemTapped">
+                <ListView.Header>
+                    <Label Text="{local:Translate CatalogOfConstellations}" TextColor="White" FontSize="50" FontAttributes="Bold"/>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Label Text="{Binding Name}" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="AddNewConstellation" Text="{local:Translate Add}" TextColor="Black" BackgroundColor="White" FontSize="40" FontAttributes="Bold" HorizontalOptions="Center"
+                    Clicked="AddNewConstellation_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

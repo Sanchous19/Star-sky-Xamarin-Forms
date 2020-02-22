@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project"
+             x:Class="Project.CatalogOfStarsPage"
+             BackgroundImage="Images/starSky.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar x:Name="StarsSearchBar" FontSize="25" Placeholder="{local:Translate EnterToSearch}" TextChanged="StarsSearchBar_TextChanged"/>
+            <ListView x:Name="StarListView" ItemsSource="{Binding Stars}" ItemTapped="StarListView_ItemTapped">
+                <ListView.Header>
+                    <Label Text="{local:Translate CatalogOfStars}" TextColor="White" FontSize="40"/>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Label Text="{Binding Name}" FontSize="25" TextColor="{Binding ColorOfStar}"/>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="AddNewStar" Text="{local:Translate AddAStar}" TextColor="Black" BackgroundColor="White" FontSize="Large" HorizontalOptions="Center" 
+                        Clicked="AddNewStar_Clicked"/>
+                <Button x:Name="OpenStarsTableButton" Text="{local:Translate TableOfStars}" TextColor="Black" BackgroundColor="White" FontSize="Large" 
+                        HorizontalOptions="End" Clicked="OpenStarsTableButton_Clicked"/>
+                <Button x:Name="OpenStarSkyButton" Text="{local:Translate MapOfStarrySky}" TextColor="Black" BackgroundColor="White" FontSize="Large" HorizontalOptions="End" 
+                        Clicked="OpenStarSkyButton_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

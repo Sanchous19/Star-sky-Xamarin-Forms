@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project"
+             x:Class="Project.AddingNewStarPage"
+             BackgroundImage="Images/starSky.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView>
+                <TableView.Root>
+                    <TableRoot>
+                        <TableSection>
+                            <ViewCell>
+                                <Label Text="{local:Translate PrimaryData}" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+                            </ViewCell>
+                            <EntryCell x:Name="NameEntry" Label="{local:Translate Name}" LabelColor="White" Placeholder="{local:Translate EnterTheName}"/>
+                            <ViewCell>
+                                <Label Text="{local:Translate PhysicalCharacteristics}" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+                            </ViewCell>
+                            <EntryCell x:Name="WeightEntry" Label="{local:Translate WeightOfStarLabelText}" LabelColor="White" Placeholder="{local:Translate EnterTheWeight}"/>
+                            <EntryCell x:Name="RadiusEntry" Label="{local:Translate RadiusOfStarLabelText}" LabelColor="White" Placeholder="{local:Translate EnterTheRadius}"/>
+                            <EntryCell x:Name="TemperatureEntry" Label="{local:Translate TemperatureOfStarLabelText}" LabelColor="White" Placeholder="{local:Translate EnterTheTemperature}"/>
+                            <EntryCell x:Name="LuminosityEntry" Label="{local:Translate LuminosityOfStarLabelText}" LabelColor="White" Placeholder="{local:Translate EnterTheLuminosity}"/>
+                            <ViewCell>
+                                <Label Text="{local:Translate Type}" TextColor="White"/>
+                            </ViewCell>
+                            <ViewCell>
+                                <Picker x:Name="TypePicker">
+                                    <Picker.Items>
+                                        <x:String>Коричневый карлик</x:String>
+                                        <x:String>Белый карлик</x:String>
+                                        <x:String>Красный гигант</x:String>
+                                        <x:String>Переменная звезда</x:String>
+                                        <x:String>Типа Вольфа — Райе</x:String>
+                                        <x:String>Типа T Тельца</x:String>
+                                        <x:String>Новая</x:String>
+                                        <x:String>Сверхновая</x:String>
+                                        <x:String>Гиперновая</x:String>
+                                        <x:String>LBV</x:String>
+                                        <x:String>ULX</x:String>
+                                        <x:String>Нейтронная звезда</x:String>
+                                        <x:String>Уникальная звезда</x:String>
+                                    </Picker.Items>
+                                </Picker>
+                            </ViewCell>
+                            <ViewCell>
+                                <Label Text="{local:Translate ObservationalData}" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+                            </ViewCell>
+                            <EntryCell x:Name="RightAscensionEntry" Label="{local:Translate RightAscension}" LabelColor="White" Placeholder="{local:Translate RightAscension}"/>
+                            <EntryCell x:Name="DeclinationEntry" Label="{local:Translate Declination}" LabelColor="White" Placeholder="{local:Translate EnterTheDeclination}"/>
+                        </TableSection>
+                    </TableRoot>
+                </TableView.Root>
+            </TableView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="AddButton" Text="{local:Translate Add}" TextColor="White" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" Clicked="AddButton_Clicked"/>
+                <Button x:Name="CancelButton" Text="{local:Translate Cancel}" TextColor="White" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" Clicked="CancelButton_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

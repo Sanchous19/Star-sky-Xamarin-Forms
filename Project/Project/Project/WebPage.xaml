@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project"
+             x:Class="Project.WebPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="DarkSlateGray"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="GoBackButton" Text="{local:Translate Back}" Style="{StaticResource ButtonStyle}" Clicked="GoBackButton_Clicked"/>
+                <SearchBar x:Name="URLSearchBar" Text="https://in-space.ru/" HorizontalOptions="FillAndExpand" SearchButtonPressed="URLSearchBar_SearchButtonPressed"/>
+                <Button x:Name="SaveURLButton" Text="{local:Translate SaveTheLink}" Style="{StaticResource ButtonStyle}" Clicked="SaveURLButton_Clicked"/>
+                <Button x:Name="SelectURLButton" Text="{local:Translate SelectTheLink}" Style="{StaticResource ButtonStyle}" Clicked="SelectURLButton_Clicked"/>
+                <Button x:Name="CorrectURLsButton" Text="{local:Translate CorrectLinks}" Style="{StaticResource ButtonStyle}" Clicked="CorrectURLsButton_Clicked"/>
+            </StackLayout>
+            <WebView x:Name="NewsWebView" Source="https://in-space.ru/" VerticalOptions="FillAndExpand" Navigating="NewsWebView_Navigating"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

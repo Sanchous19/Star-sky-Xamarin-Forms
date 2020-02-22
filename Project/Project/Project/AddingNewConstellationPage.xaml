@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project"
+             x:Class="Project.AddingNewConstellationPage"
+             BackgroundImage="Images/constellationBackground.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView>
+                <TableView.Root>
+                    <TableRoot>
+                        <TableSection>
+                            <ViewCell>
+                                <Label Text="{local:Translate Data}" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+                            </ViewCell>
+                            <ViewCell>
+                                <Label Text="{local:Translate Name}" TextColor="White" FontSize="Medium" FontAttributes="Bold"/>
+                            </ViewCell>
+                            <ViewCell>
+                                <Entry x:Name="NameEntry" FontSize="Medium" Placeholder="{local:Translate EnterTheName}"  BackgroundColor="#60757575"
+                                        PlaceholderColor="Black" TextColor="Black"/>
+                            </ViewCell>
+                            <ViewCell>
+                                <Label Text="{local:Translate URIOfImage}" TextColor="White" FontSize="Medium" FontAttributes="Bold"/>
+                            </ViewCell>
+                            <ViewCell>
+                                <Entry x:Name="ImageEntry" FontSize="Medium" Placeholder="{local:Translate EnterTheURIOfImage}" BackgroundColor="#60757575"
+                                        PlaceholderColor="Black" TextColor="Black"/>
+                            </ViewCell>
+                        </TableSection>
+                        <TableSection>
+                            <ViewCell>
+                                <Label Text="{local:Translate TheIncludedStars}" TextColor="White" FontSize="Large" FontAttributes="Bold"/>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout x:Name="StarsStack">
+                                    <!--...-->
+                                </StackLayout>
+                            </ViewCell>
+                        </TableSection>
+                        <TableSection>
+                            <ViewCell>
+                            </ViewCell>
+                        </TableSection>
+                    </TableRoot>
+                </TableView.Root>
+            </TableView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="AddButton" Text="{local:Translate Add}" TextColor="White" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" Clicked="AddButton_Clicked"/>
+                <Button x:Name="CancelButton" Text="{local:Translate Cancel}" TextColor="White" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" Clicked="CancelButton_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

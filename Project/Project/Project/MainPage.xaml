@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project"
+             x:Class="Project.MainPage"
+             BackgroundImage="Images/kosmos.jpg"
+             NavigationPage.HasNavigationBar="False">
+
+    <AbsoluteLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0, 0, 1, 60">
+            <Button x:Name="OpenWebPageButton" Text="{local:Translate InternetAccess}" FontSize="30" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center"
+                    VerticalOptions="Start" Clicked="OpenWebPageButton_Clicked"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0, 0, 1, 60">
+            <Button x:Name="LanguageButton" Text="{local:Translate Language}" FontSize="30" FontAttributes="Bold" TextColor="White" HorizontalOptions="End"
+                    VerticalOptions="Start" Clicked="LanguageButton_Clicked"/>
+        </StackLayout>
+        <Image x:Name="PlanetImage" Source="Images/earth.jpg" Aspect="AspectFit" AbsoluteLayout.LayoutBounds="100, 200, 375, 375" BackgroundColor="Transparent"/>
+        <Image x:Name="StarImage" Source="Images/sun.jpg" Aspect="AspectFit" AbsoluteLayout.LayoutBounds="550, 180, 400, 400" BackgroundColor="Transparent"/>
+        <Image x:Name="ConstellationImage" Source="Images/constellation.jpg" Aspect="AspectFit" AbsoluteLayout.LayoutBounds="1010, 180, 410, 410" BackgroundColor="Transparent"/>
+        <Label x:Name="PlanetLabel" Text="{local:Translate Planets}" FontSize="50" TextColor="#072658"  AbsoluteLayout.LayoutBounds="210, 565"/>
+        <Label x:Name="StarLabel" Text="{local:Translate Stars}" FontSize="50" TextColor="#f28f02" AbsoluteLayout.LayoutBounds="680, 565"/>
+        <Label x:Name="ConstellationLabel" Text="{local:Translate Constellations}" FontSize="50" TextColor="White" AbsoluteLayout.LayoutBounds="1100, 565"/>
+        <Image x:Name="ScreenSaverImage" Source="Images/screenSaver.jpg" Aspect="Fill" AbsoluteLayout.LayoutFlags="SizeProportional" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"/>
+    </AbsoluteLayout>
+
+</ContentPage>

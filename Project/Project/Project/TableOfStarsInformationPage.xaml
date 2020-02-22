@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project"
+             x:Class="Project.TableOfStarsInformationPage"
+             BackgroundImage="Images/starSky.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <Style x:Key="MyLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style x:Key="MyImageStyle" TargetType="Image">
+            <Setter Property="Source" Value="Images/leftArrow.jpg"/>
+            <Setter Property="Aspect" Value="AspectFit"/>
+            <Setter Property="HeightRequest" Value="35"/>
+            <Setter Property="WidthRequest" Value="25"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <Grid x:Name="StarsGrid" RowSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <StackLayout x:Name="StL1" Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                    <Label Text="{local:Translate Name}" Style="{StaticResource MyLabelStyle}"/>
+                    <Image Source="Images/downArrow.jpg" Style="{StaticResource Key=MyImageStyle}"/>
+                </StackLayout>
+                <StackLayout x:Name="StL2" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                    <Label Text="{local:Translate Weight}" Style="{StaticResource MyLabelStyle}"/>
+                    <Image Style="{StaticResource Key=MyImageStyle}"/>
+                </StackLayout>
+                <StackLayout x:Name="StL3" Orientation="Horizontal" Grid.Row="0" Grid.Column="2">
+                    <Label Text="{local:Translate Radius}" Style="{StaticResource MyLabelStyle}"/>
+                    <Image Style="{StaticResource Key=MyImageStyle}"/>
+                </StackLayout>
+                <StackLayout x:Name="StL4" Orientation="Horizontal" Grid.Row="0" Grid.Column="3">
+                    <Label Text="{local:Translate Temperature}" Style="{StaticResource MyLabelStyle}"/>
+                    <Image Style="{StaticResource Key=MyImageStyle}"/>
+                </StackLayout>
+                <StackLayout x:Name="StL5" Orientation="Horizontal" Grid.Row="0" Grid.Column="4">
+                    <Label Text="{local:Translate Luminosity}" Style="{StaticResource MyLabelStyle}"/>
+                    <Image Style="{StaticResource Key=MyImageStyle}"/>
+                </StackLayout>
+                <StackLayout x:Name="StL6" Orientation="Horizontal" Grid.Row="0" Grid.Column="5">
+                    <Label Text="{local:Translate TypeOfStar}" Style="{StaticResource MyLabelStyle}"/>
+                    <Image Style="{StaticResource Key=MyImageStyle}"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

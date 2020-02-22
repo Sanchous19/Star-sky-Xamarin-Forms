@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local ="clr-namespace:Project"
+             x:Class="Project.InformationAboutThePlanetPage"
+             BackgroundImage = "Images/starBackground.jpg">
+    <ContentPage.Resources>
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="TextColor" Value="{Binding PlanetColor}"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid RowSpacing="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="400"/>
+            </Grid.RowDefinitions>
+            <Label Text="{Binding Path=Name}" TextColor="{Binding PlanetColor}" FontSize="45" FontAttributes="Bold" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" HorizontalOptions="Center"/>
+            <Label Text="{local:Translate RadiusOfPlanet}" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="1"/>
+            <Label Text="{Binding Path=Radius}" Style="{StaticResource LabelStyle}" Grid.Column="1" Grid.Row="1"/>
+            <Label Text="{local:Translate WeightOfPlanet}" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="2"/>
+            <Label Text="{Binding Path=Weight}" Style="{StaticResource LabelStyle}" Grid.Column="1" Grid.Row="2"/>
+            <Label Text="{local:Translate PeriodOfRotationAroundTheAxis}" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="3"/>
+            <Label Text="{Binding Path=PeriodOfRotationAroundAxis}" Style="{StaticResource LabelStyle}" Grid.Column="1" Grid.Row="3"/>
+            <Label Text="{local:Translate TheBodyAroundWhichThePlanetRotates}" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="4"/>
+            <Label Text="{Binding Path=TheBodyAroundWhichThePlanetRotates}" Style="{StaticResource LabelStyle}" Grid.Column="1" Grid.Row="4"/>
+            <Label Text="{local:Translate PeriodOfRotationAroundTheBody}" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="5"/>
+            <Label Text="{Binding Path=PeriodOfRotationAroundTheBody}" Style="{StaticResource LabelStyle}" Grid.Column="1" Grid.Row="5"/>
+            <Label Text="{local:Translate OrbitRadius}" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="6"/>
+            <Label Text="{Binding Path=OrbitRadius}" Style="{StaticResource LabelStyle}" Grid.Column="1" Grid.Row="6"/>
+            <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="{Binding Path=NameOfImage}" Grid.Column="0"/>
+                <Image Source="{Binding Path=NameOfImage1}" Grid.Column="1"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
